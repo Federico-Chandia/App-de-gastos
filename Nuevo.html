@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Gastos.js"></script>
+    <h2>App de Gastos</h2>
+
+    <div class="flex-container">
+        <h2>Ingrese nombre y gasto</h2>
+    </div>
+    <div class="flex-container">
+        <input type="text" placeholder="nombre">
+        <input type="number" placeholder="monto">
+        <button id="btn-add" onclick="AgregarNuevo(monto.value, monto.value)">Agregar</button>
+    </div>
+    <div class="flexcontainer" id="datos"></div>
+    <div class="flex-container" id="total">
+    <button onclick="BorrarUno()">Borrar Uno</button>
+</div>
+    
+</body>
+</html>
