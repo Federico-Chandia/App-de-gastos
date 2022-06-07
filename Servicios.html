@@ -4,26 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Itbank-Servicios</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar  bg-primary navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">ITBANK</a>
+              <form>
+                <label for="Buscar">Buscar</label>
+                </label>
+                    <input id="Buscar" placeholder="Servicios" type="text"/>  
+                </form>
+  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">              
+                  <ul class="navbar-nav ">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Cuentas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Transferencias</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Impuestos y Servicios</a>
+  
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Turnos</a>
+                    </li>
+                  </ul>
+  
+                    </li>                  
+                  </ul>              
+  
+                </div>
+              </div>
+            </nav>
+      </header>
+      <main>
+          <div class="hero-image">
+          <div class="texto-hero">
+          <h1>Vivi la experiencia Itbank</h1>
+          <h4>¿No sos cliente? No hay problema</h4>
+          <button type="button" class="btn btn-lg boton-R">Registrate</button>
+      </div>
+      </div>
     <script src="Gastos.js"></script>
-    <h2>App de Gastos</h2>
+    
 
-    <div>
+    <div class="flex-container">
         <h2>Ingrese nombre y gasto</h2>
     </div>
     <div class="flex-container">
-        <form>
-        <input type="text" placeholder="nombre">
-        <input type="number" placeholder="monto">
-    </form>
-        <button id="btn-add" onclick="AgregarNuevo(name.value, monto.value)">Agregar</button>
+        <input type="text" id="nombre" placeholder="nombre">
+        <input type="number" id="monto" placeholder="monto">
+        <button id="btn-add" onclick="AgregarNuevo(nombre.value, monto.value)">Agregar</button>
     </div>
-    <div class="flexcontainer" id="datos"></div>
-    <div class="flex-container" id="total">
-    <button onclick="BorrarUno()">Borrar Uno</button>
-</div>
+    <div class="flex-container" id="datos"></div>
+    <div class="flex-container" id="total"></div>
+    <div class="flex-container" id="borrar">
+    <button onclick="BorrarUno()">Borrar Uno</button></div>
+
     
 </body>
 </html>
+
