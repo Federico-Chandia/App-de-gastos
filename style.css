@@ -1,0 +1,43 @@
+.navegacion{
+    display: flex;
+    justify-content: right;
+}
+.hero-image{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8GEL7Y6NE28n9jNlfIXpe_LeG_Bol2tGJFg&usqp=CAU");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
+}
+.texto-hero{
+    margin: 3em;
+    color: #000;
+}
+.boton-R{
+    color:#fafafa;
+    background-color: rgb(231, 14, 14);
+    
+}.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container > div {
+    width: 100;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item{
+    width: 10;
+    background-color: antiquewhite;
+}

@@ -10,13 +10,15 @@
     <script src="Gastos.js"></script>
     <h2>App de Gastos</h2>
 
-    <div class="flex-container">
+    <div>
         <h2>Ingrese nombre y gasto</h2>
     </div>
     <div class="flex-container">
+        <form>
         <input type="text" placeholder="nombre">
         <input type="number" placeholder="monto">
-        <button id="btn-add" onclick="AgregarNuevo(monto.value, monto.value)">Agregar</button>
+    </form>
+        <button id="btn-add" onclick="AgregarNuevo(name.value, monto.value)">Agregar</button>
     </div>
     <div class="flexcontainer" id="datos"></div>
     <div class="flex-container" id="total">
